@@ -1,7 +1,6 @@
 # Simple web infrastructure
 
-![server web infrastructure that hosts the website that is reachable via www.foobar.com](0-simple_web_stack.PNG)
-
+![Image of a simple server web infrastructure](0-simple_web_stack.PNG)
 
 ## Description
 
