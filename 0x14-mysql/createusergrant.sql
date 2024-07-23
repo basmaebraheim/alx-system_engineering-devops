@@ -13,3 +13,10 @@ INSERT INTO nexus6 (id,name) VALUES(1,"BASMA");
 SELECT * FROM nexus6;
 
 GRANT SELECT on tyrell_corp.nexus6 TO 'holberton_user'@'localhost';
+
+-- create a new user for the replica server.
+CREATE USER replica_user@% IDENTIFIED BY '111111';
+
+GRANT REPLICATION SLAVE ON *.* TO 'replica_user'@'%';
+
+GRANT SELECT on mysql.user TO 'holberton_user '@'localhost';
